@@ -21,6 +21,16 @@ html {
     --shadow-light: rgba(0, 0, 0, 0.1);
     --shadow-medium: rgba(0, 0, 0, 0.15);
     --shadow-heavy: rgba(0, 0, 0, 0.25);
+    --primary-light: #818cf8;
+    --primary-dark: #4f46e5;
+    --dark-color: #f9fafb;
+    --dark-light: #f3f4f6;
+    --light-color: #111827;
+    --light-dark: #1f2937;
+    --gray-color: #9ca3af;
+    --font-primary: 'Poppins', sans-serif;
+    --font-mono: 'Roboto Mono', monospace;
+    --border-radius: 8px;
     
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
