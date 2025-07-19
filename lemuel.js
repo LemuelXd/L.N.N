@@ -114,56 +114,6 @@ function animateSkillBars() {
 window.addEventListener('scroll', animateSkillBars);
 window.addEventListener('load', animateSkillBars);
 
-// --- Experience Timeline Animation ---
-function animateTimeline() {
-    document.querySelectorAll('.timeline-item').forEach(item => {
-        const itemTop = item.getBoundingClientRect().top;
-        if (itemTop < window.innerHeight - 100) {
-            item.classList.add('visible');
-        }
-    });
-}
-window.addEventListener('scroll', animateTimeline);
-window.addEventListener('load', animateTimeline);
-
-// --- Services Section Animation ---
-function animateServices() {
-    document.querySelectorAll('.service-card').forEach(card => {
-        const cardTop = card.getBoundingClientRect().top;
-        if (cardTop < window.innerHeight - 100) {
-            card.classList.add('show');
-        }
-    });
-}
-window.addEventListener('scroll', animateServices);
-window.addEventListener('load', animateServices);
-
-// --- Testimonials Carousel ---
-const testimonialContainer = document.querySelector('.testimonials-carousel');
-if (testimonialContainer) {
-    let currentIndex = 0;
-    const testimonials = testimonialContainer.querySelectorAll('.testimonial');
-    function showTestimonial(index) {
-        testimonials.forEach((t, i) => {
-            t.style.display = i === index ? 'block' : 'none';
-        });
-    }
-    showTestimonial(currentIndex);
-
-    const prevBtn = testimonialContainer.querySelector('.prev');
-    const nextBtn = testimonialContainer.querySelector('.next');
-    if (prevBtn && nextBtn) {
-        prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
-            showTestimonial(currentIndex);
-        });
-        nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % testimonials.length;
-            showTestimonial(currentIndex);
-        });
-    }
-}
-
 // --- Footer Year Update ---
 const yearSpan = document.getElementById('footerYear');
 if (yearSpan) {
