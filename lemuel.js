@@ -7,7 +7,7 @@ const formStatus = document.getElementById('formStatus');
     const script = document.createElement('script');
     script.src = 'https://cdn.emailjs.com/dist/email.min.js';
     script.onload = () => {
-        emailjs.init('YOUR_PUBLIC_KEY'); // Replace with your EmailJS public key
+        emailjs.init('j_Rvdu4FRzpH80CxD'); // Replace with your EmailJS public key
     };
     document.head.appendChild(script);
 })();
